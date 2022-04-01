@@ -1,5 +1,3 @@
-const routesAdmin = [
-
-]
+const routesAdmin = [];
 
 export default routesAdmin;

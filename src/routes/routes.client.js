@@ -1,6 +1,3 @@
-const routesClient = [
-
-
-]
+const routesClient = [];
 
 export default routesClient;
