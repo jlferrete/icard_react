@@ -4,9 +4,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
 import { loginApi } from "../../../api/user";
+import { useAuth } from "../../../hooks";
 import "./LoginForm.scss";
 
 export function LoginForm() {
+
+    console.log(useAuth());
 
     const formik = useFormik({
         initialValues: intialValues(),
