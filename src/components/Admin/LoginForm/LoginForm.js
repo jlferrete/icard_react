@@ -9,7 +9,7 @@ import "./LoginForm.scss";
 
 export function LoginForm() {
 
-    console.log(useAuth());
+    const { login } = useAuth();
 
     const formik = useFormik({
         initialValues: intialValues(),
@@ -18,7 +18,7 @@ export function LoginForm() {
             try {
                 const response = await loginApi(formValue);
                 const { access } = response;
-                console.log(access)
+                login(access);
             } catch (error) {
                 toast.error(error.message);
             }
