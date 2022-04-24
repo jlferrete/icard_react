@@ -42,11 +42,11 @@ export function AuthProvider(props) {
         auth,
         login,
         logout,
-    }
+    };
 
     if (auth === undefined) return null;
 
     return (
         <AuthContext.Provider value={valueContext}>{children}</AuthContext.Provider>
-    )
+    );
 }
